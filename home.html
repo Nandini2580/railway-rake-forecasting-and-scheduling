@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railway Rake Data Input</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 10px;
+            background-color: #2c7be5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1a5fd0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Railway Rake Input Data</h2>
+
+    <form>
+        <label>Date</label>
+        <input type="date" name="date" required>
+
+        <label>Station ID</label>
+        <input type="text" name="station_id" placeholder="Enter Station ID" required>
+
+        <label>Rake Type</label>
+        <input type="text" name="rake_type" placeholder="Enter Rake Type" required>
+
+        <label>Actual Load (Tons)</label>
+        <input type="number" name="actual_load_tons" placeholder="Enter Load in Tons" required>
+
+        <label>Delay (Minutes)</label>
+        <input type="number" name="delay_minutes" placeholder="Enter Delay Time" required>
+
+        <label>Seasonal Factor</label>
+        <input type="number" step="0.01" name="seasonal_factor" placeholder="Enter Seasonal Factor" required>
+
+        <button type="submit">Submit Data</button>
+    </form>
+</div>
+
+</body>
+</html>
